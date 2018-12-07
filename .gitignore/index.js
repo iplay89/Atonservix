@@ -22,7 +22,7 @@ bot.on('message', message => {
                 fields: [{
                     name: '***Liste des commandes***',
                     value: ´&ip ~ Donne l'ip du serveur
-                            &3´
+&3 ~ ffbf´
                 }]
             }});
         }
@@ -30,3 +30,4 @@ bot.on('message', message => {
 });
 
 bot.login(process.env.TOKEN);
+
