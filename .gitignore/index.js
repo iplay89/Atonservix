@@ -20,7 +20,7 @@ bot.on('message', message => {
                 },
                 title: '*MCAsterix bot - &aide*',
                 fields: [{
-                    name: '**Liste des commandes**',
+                    name: '__**Liste des commandes**__',
                     value: '*&ip ~ Ip de notre serveur*'
                 },
                 {
@@ -30,7 +30,12 @@ bot.on('message', message => {
                 {
                     name: '*&boutique ~ Boutique disponible*',
                     value: '*&news ~ Nouveautes sur le parc*'
-                }]
+                }],
+                timestamp: new Date(),
+                footer: {
+                    icon_url: bot.user.avatarURL,
+                    text:'MCAsterix tout droit réservé - 2018~2019'
+                }
             }});
         }
         else if(message.content === '&ip') {
@@ -42,9 +47,14 @@ bot.on('message', message => {
                 },
                 title: '*MCAsterix bot - &ip*',
                 fields: [{
-                    name: '**Ip de notre serveur**',
+                    name: '__**Ip de notre serveur**__',
                     value: '*play.mcasterix.eu*'
-                }]
+                }],
+                timestamp: new Date(),
+                footer: {
+                    icon_url: bot.user.avatarURL,
+                    text:'MCAsterix tout droit réservé - 2018~2019'
+                }
             }});
         }
         else if(message.content === '&reseaux') {
@@ -54,9 +64,9 @@ bot.on('message', message => {
                     name: bot.user.username,
                     icon_url: bot.user.avatarURL
                 },
-                title: '*MCAsterix bot - &ip*',
+                title: '*MCAsterix bot - &reseaux*',
                 fields: [{
-                    name: '**Nos differents reseaux**',
+                    name: '__**Nos differents reseaux**__',
                     value: '*Suivez nous sur ...*'
                 },
                 {   name: '**Twitter**',
@@ -67,7 +77,31 @@ bot.on('message', message => {
                 },
                 {   name: '**email**',
                     value: '*contact@mcasterix.eu*'
-                }]
+                }],
+                timestamp: new Date(),
+                footer: {
+                    icon_url: bot.user.avatarURL,
+                    text:'MCAsterix tout droit réservé - 2018~2019'
+                }
+            }});
+        }
+        else if(message.content === '&plan') {
+            message.channel.send({embed: {
+                color: 3447003,
+                author : { 
+                    name: bot.user.username,
+                    icon_url: bot.user.avatarURL
+                },
+                title: '*MCAsterix bot - &plan*',
+                fields: [{
+                    name: '__**Plan du parc**__',
+                    value: '*[Clique ici](https://www.parcasterix.fr/sites/default/files/imce/pa-guide-pmr-2017-fr.pdf)*'
+                }],
+                timestamp: new Date(),
+                footer: {
+                    icon_url: bot.user.avatarURL,
+                    text:'MCAsterix tout droit réservé - 2018~2019'
+                }
             }});
         }
     }
