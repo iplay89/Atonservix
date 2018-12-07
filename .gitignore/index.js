@@ -33,7 +33,6 @@ bot.on('message', message => {
                 }],
                 timestamp: new Date(),
                 footer: {
-                    icon_url: bot.user.avatarURL,
                     text:'MCAsterix tout droit réservé - 2018~2019'
                 }
             }});
@@ -52,7 +51,6 @@ bot.on('message', message => {
                 }],
                 timestamp: new Date(),
                 footer: {
-                    icon_url: bot.user.avatarURL,
                     text:'MCAsterix tout droit réservé - 2018~2019'
                 }
             }});
@@ -80,7 +78,6 @@ bot.on('message', message => {
                 }],
                 timestamp: new Date(),
                 footer: {
-                    icon_url: bot.user.avatarURL,
                     text:'MCAsterix tout droit réservé - 2018~2019'
                 }
             }});
@@ -99,7 +96,42 @@ bot.on('message', message => {
                 }],
                 timestamp: new Date(),
                 footer: {
-                    icon_url: bot.user.avatarURL,
+                    text:'MCAsterix tout droit réservé - 2018~2019'
+                }
+            }});
+        }
+        else if(message.content === '&boutique') {
+            message.channel.send({embed: {
+                color: 3447003,
+                author : { 
+                    name: bot.user.username,
+                    icon_url: bot.user.avatarURL
+                },
+                title: '*MCAsterix bot - &boutique*',
+                fields: [{
+                    name: '__**Boutique en ligne**__',
+                    value: '*[Clique ici](http://shop-mcasterix.fr)*'
+                }],
+                timestamp: new Date(),
+                footer: {
+                    text:'MCAsterix tout droit réservé - 2018~2019'
+                }
+            }});
+        }
+        else if(message.content === '&news') {
+            message.channel.send({embed: {
+                color: 3447003,
+                author : { 
+                    name: bot.user.username,
+                    icon_url: bot.user.avatarURL
+                },
+                title: '*MCAsterix bot - &news*',
+                fields: [{
+                    name: '__**Nouveautés sur le serveur**__',
+                    value: '*Réouverture du serveur le 9/12*'
+                }],
+                timestamp: new Date(),
+                footer: {
                     text:'MCAsterix tout droit réservé - 2018~2019'
                 }
             }});
