@@ -21,8 +21,8 @@ bot.on('message', message => {
                 title: '*MCAsterix bot - &aide*',
                 fields: [{
                     name: '***Liste des commandes***',
-                    value: ´&ip ~ Donne l'ip du serveur
-&3 ~ ffbf´
+                    value: ´&ip ~ Ip du serveur
+&3 ~ dv´
                 }]
             }});
         }
