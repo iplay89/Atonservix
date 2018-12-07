@@ -26,6 +26,10 @@ bot.on('message', message => {
                 {
                     name: '*&plan ~ Plan du parc*',
                     value: '*&reseaux ~ Nos differents reseaux*'
+                },
+                {
+                    name: '*&boutique ~ Boutique disponible*',
+                    value: '*&news ~ Nouveautes sur le parc*'
                 }]
             }});
         }
