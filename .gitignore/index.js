@@ -24,7 +24,7 @@ bot.on('message', message => {
                     value: '&Ip ~ Ip de notre serveur'
                 },
                 {
-                    name: '**',
+                    name: 'test',
                     value: '&reseaux ~ Nos differents reseaux'
                 }]
             }});
