@@ -21,7 +21,7 @@ bot.on('message', message => {
                 title: '*MCAsterix bot - &aide*',
                 fields: [{
                     name: '***Liste des commandes***',
-                    value: '&ip ~ Ip du serveur'
+                    value: '&ip ~ Ip du serveur',
                     value: '&reseaux ~ Nos differents reseaux'
                 }]
             }});
@@ -30,4 +30,3 @@ bot.on('message', message => {
 });
 
 bot.login(process.env.TOKEN);
-
