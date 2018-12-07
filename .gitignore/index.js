@@ -14,7 +14,7 @@ bot.on('message', message => {
         if(message.content === '&aide') {
             message.channel.send({embed: {
                 color: 3447003,
-                decription: 'test'
+                description: 'test'
             }});
         }
     }
