@@ -18,10 +18,11 @@ bot.on('message', message => {
                     name: bot.user.username,
                     icon_url: bot.user.avatarURL
                 },
-                title: '*MCAsterix bot - &aide',
+                title: '*MCAsterix bot - &aide*',
                 fields: [{
                     name: '***Liste des commandes***',
-                    value: '&ip ~'
+                    value: ´&ip ~ Donne l'ip du serveur
+                            &3´
                 }]
             }});
         }
