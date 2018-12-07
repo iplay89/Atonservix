@@ -33,6 +33,20 @@ bot.on('message', message => {
                 }]
             }});
         }
+        else if(message.content === '&ip') {
+            message.channel.send({embed: {
+                color: 3447003,
+                author : { 
+                    name: bot.user.username,
+                    icon_url: bot.user.avatarURL
+                },
+                title: '*MCAsterix bot - &ip*',
+                fields: [{
+                    name: '**Ip de notre serveur**',
+                    value: '*play.mcasterix.eu*'
+                }]
+            }});
+        }
     }
 });
 
