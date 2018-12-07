@@ -14,7 +14,16 @@ bot.on('message', message => {
         if(message.content === '&aide') {
             message.channel.send({embed: {
                 color: 3447003,
-                description: 'test'
+                author : { 
+                    name: bot.user.username,
+                    icon_url: bot.user.avatarURL
+                },
+                title: 'TITRE',
+                description: 'test',
+                fields: [{
+                    name: 'Liste des commande',
+                    value: 'commande1'
+                }]
             }});
         }
     }
