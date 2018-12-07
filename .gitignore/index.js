@@ -21,7 +21,7 @@ bot.on('message', message => {
                 title: '*MCAsterix bot - &aide*',
                 fields: [{
                     name: '**Liste des commandes**',
-                    value: '*&Ip ~ Ip de notre serveur*'
+                    value: '*&ip ~ Ip de notre serveur*'
                 },
                 {
                     name: '*&plan ~ Plan du parc*',
@@ -44,6 +44,29 @@ bot.on('message', message => {
                 fields: [{
                     name: '**Ip de notre serveur**',
                     value: '*play.mcasterix.eu*'
+                }]
+            }});
+        }
+        else if(message.content === '&reseaux') {
+            message.channel.send({embed: {
+                color: 3447003,
+                author : { 
+                    name: bot.user.username,
+                    icon_url: bot.user.avatarURL
+                },
+                title: '*MCAsterix bot - &ip*',
+                fields: [{
+                    name: '**Nos differents reseaux**',
+                    value: '*Suivez nous sur ...*'
+                },
+                {   name: '**Twitter**',
+                    value: '*[Clique ici](https://twitter.com/MCAsterixINFO)*'
+                },
+                {   name: '**Facebook**',
+                    value: '*[Clique ici](https://www.facebook.com/mcasterixINFO)*'
+                },
+                {   name: '**email**',
+                    value: '*contact@mcasterix.eu*'
                 }]
             }});
         }
