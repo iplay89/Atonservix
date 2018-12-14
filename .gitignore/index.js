@@ -32,7 +32,8 @@ bot.on('message', message => {
                     value: '_&news ~ Nouveautes sur le parc_'
                 },
                 {
-                    name: '_&attraction ~ attractions ouvertes_'
+                    name: '_&attraction ~ attractions ouvertes_',
+                    value: '_play.mcasterix.eu_'
                 }],
                 timestamp: new Date(),
                 footer: {
@@ -168,7 +169,8 @@ bot.on('message', message => {
                     value: '_Les chars tamponneurs_'
                 },
                 {
-                    name: '_Menhir express_'
+                    name: '_Menhir express_',
+                    value: '_play.mcasterix.eu_'
                 }],
                 timestamp: new Date(),
                 footer: {
