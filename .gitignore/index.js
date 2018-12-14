@@ -18,18 +18,18 @@ bot.on('message', message => {
                     name: bot.user.username,
                     icon_url: bot.user.avatarURL
                 },
-                title: '*MCAsterix bot - &aide*',
+                title: '_MCAsterix bot - &aide_',
                 fields: [{
                     name: '__**Liste des commandes**__',
-                    value: '*&ip ~ Ip de notre serveur*'
+                    value: '_&ip ~ Ip de notre serveur_'
                 },
                 {
-                    name: '*&plan ~ Plan du parc*',
-                    value: '*&reseaux ~ Nos differents reseaux*'
+                    name: '_&plan ~ Plan du parc_',
+                    value: '_&reseaux ~ Nos differents reseaux_'
                 },
                 {
-                    name: '*&boutique ~ Boutique disponible*',
-                    value: '*&news ~ Nouveautes sur le parc*'
+                    name: '_&boutique ~ Boutique disponible_',
+                    value: '_&news ~ Nouveautes sur le parc_'
                 }],
                 timestamp: new Date(),
                 footer: {
@@ -44,7 +44,7 @@ bot.on('message', message => {
                     name: bot.user.username,
                     icon_url: bot.user.avatarURL
                 },
-                title: '*MCAsterix bot - &ip*',
+                title: '_MCAsterix bot - &ip_',
                 fields: [{
                     name: '__**Ip de notre serveur**__',
                     value: '*play.mcasterix.eu*'
@@ -62,7 +62,7 @@ bot.on('message', message => {
                     name: bot.user.username,
                     icon_url: bot.user.avatarURL
                 },
-                title: '*MCAsterix bot - &reseaux*',
+                title: '_MCAsterix bot - &reseaux_',
                 fields: [{
                     name: '__**Nos differents reseaux**__',
                     value: '*Suivez nous sur ...*'
@@ -89,7 +89,7 @@ bot.on('message', message => {
                     name: bot.user.username,
                     icon_url: bot.user.avatarURL
                 },
-                title: '*MCAsterix bot - &plan*',
+                title: '_MCAsterix bot - &plan_',
                 fields: [{
                     name: '__**Plan du parc**__',
                     value: '*[Clique ici](https://www.parcasterix.fr/sites/default/files/imce/pa-guide-pmr-2017-fr.pdf)*'
@@ -107,7 +107,7 @@ bot.on('message', message => {
                     name: bot.user.username,
                     icon_url: bot.user.avatarURL
                 },
-                title: '*MCAsterix bot - &boutique*',
+                title: '_MCAsterix bot - &boutique_',
                 fields: [{
                     name: '__**Boutique en ligne**__',
                     value: '*[Clique ici](http://shop-mcasterix.fr)*'
@@ -125,7 +125,7 @@ bot.on('message', message => {
                     name: bot.user.username,
                     icon_url: bot.user.avatarURL
                 },
-                title: '*MCAsterix bot - &news*',
+                title: '_MCAsterix bot - &news_',
                 fields: [{
                     name: '__**Nouveautés sur le serveur**__',
                     value: '*Réouverture du serveur le 9/12*'
@@ -136,6 +136,44 @@ bot.on('message', message => {
                 }
             }});
         }
+        else if(message.content === '&attraction') {
+            message.channel.send({embed: {
+                color: 3447003,
+                author : { 
+                    name: bot.user.username,
+                    icon_url: bot.user.avatarURL
+                },
+                title: '_MCAsterix bot - &attraction_',
+                fields: [{
+                    name: '__**Liste des attractions ouvertes**__',
+                    value: '_&attraction ~ la liste_'
+                },
+                {
+                    name: '_Le carousel de César_',
+                    value: '_Romus et rapidus_'
+                },
+                {
+                    name: '_Pegase express_',
+                    value: '_Le vol d icare_'
+                },
+                {
+                    name: '_La rivière d élis_',
+                    value: '_Discobélix_'
+                },
+                {
+                    name: '_Le grand splach_',
+                    value: '_Les chars tamponneurs_'
+                },
+                {
+                    name: '_Menhir express_',
+                }],
+                timestamp: new Date(),
+                footer: {
+                    text:'MCAsterix tout droit réservé - 2018~2019'
+                }
+            }});
+        }
+
     }
 });
 
