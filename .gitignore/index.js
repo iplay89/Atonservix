@@ -30,6 +30,9 @@ bot.on('message', message => {
                 {
                     name: '_&boutique ~ Boutique disponible_',
                     value: '_&news ~ Nouveautes sur le parc_'
+                },
+                {
+                    name: '_&attraction ~ liste des attractions ouvertes_'
                 }],
                 timestamp: new Date(),
                 footer: {
@@ -165,7 +168,7 @@ bot.on('message', message => {
                     value: '_Les chars tamponneurs_'
                 },
                 {
-                    name: '_Menhir express_',
+                    name: '_Menhir express_'
                 }],
                 timestamp: new Date(),
                 footer: {
