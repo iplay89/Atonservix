@@ -32,7 +32,7 @@ bot.on('message', message => {
                     value: '_&news ~ Nouveautes sur le parc_'
                 },
                 {
-                    name: '_&attraction ~ liste des attractions ouvertes_'
+                    name: '_&attraction ~ attractions ouvertes_'
                 }],
                 timestamp: new Date(),
                 footer: {
